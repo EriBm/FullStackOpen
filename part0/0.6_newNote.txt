@@ -1,0 +1,13 @@
+title 0.6: new note Sequence
+
+note over browser:
+The POST request to the address new_note_spa contains
+the new note as JSON-data
+end note
+
+browser->server: https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: Status Code: 201 Created {"message":"note created"}
+note over browser:
+browser stays on the same page, 
+and it sends no further HTTP-requests.
+end note
